@@ -3,15 +3,11 @@ import sys
 def generate(file, output):
 	s = open(file, "rt")
 	s = s.read()
-	#s = "Тест\\Тест1\\0" + '\n' + "Привет\\Здряв\\0" + '\n' + "Привет\\Здряв https://vk.com/photo405436173_456239223\\0"
 	
 	for i in range(0,4):
 		s = s.replace('\\'+str(i), '|')
 	
 	s = s.replace('\\', '|')
-	
-	#print(len("https://vk.com"))
-	#print(len("http://vk.com/"))
 	
 	arr = s.split('\n')
 	for k,v in enumerate(arr):
@@ -39,7 +35,6 @@ def generate(file, output):
 	
 	s = "\n".join(arr)
 	
-	#print(s)
 	f = open(output, "w")
 	f.write(s)
 	print("Готово!")
