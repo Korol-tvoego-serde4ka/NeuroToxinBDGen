@@ -1,4 +1,4 @@
-# Конвектор Баз с iHA на GhostlyBot
+# Конвектор Баз с iHA на NeuroToxinBot
 
 ## Что нужно?
 
